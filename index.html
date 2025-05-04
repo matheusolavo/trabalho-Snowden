@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacidade de Dados - Estudo Snowden</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Reflexão sobre o filme <span>Snowden</span></h1>
+    <p>Depois de assistir ao filme <strong>Snowden</strong>, a gente entende o quanto os dados pessoais precisam ser tratados com cuidado. Qualquer descuido pode colocar a privacidade de milhares de pessoas em risco. Para quem trabalha como desenvolvedor front-end, lidar com dados sensíveis não é só uma questão de aparência ou funcionamento do site — é uma questão de responsabilidade. Informações como CPF, e-mail, endereço e senha podem facilmente vazar se não houver atenção. Por isso, é essencial usar HTTPS, proteger os dados com criptografia e sempre deixar claro para o usuário como essas informações serão usadas.</p>
+
+    <h2>📝 Exemplo de Formulário</h2>
+    <form>
+      <!-- O campo CPF exige mais cuidado porque é um dado pessoal sensível -->
+      <input type="text" name="cpf" placeholder="Digite seu CPF" />
+
+      <!-- O campo Email deve ser protegido pois pode ser usado para ataques de phishing -->
+      <input type="email" name="email" placeholder="Digite seu Email" />
+
+      <!-- Senhas nunca devem ser visíveis ou armazenadas em localStorage -->
+      <input type="password" name="senha" placeholder="Digite sua Senha" />
+
+      <!-- Endereço pode expor localização e rotina do usuário -->
+      <input type="text" name="endereco" placeholder="Digite seu Endereço" />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>✅ Dicas Importantes para Cuidar dos Dados dos Usuários</h2>
+<ul>
+  <li>
+    🔒 <strong>Use HTTPS (cadeado no site)</strong><br>
+    Isso protege os dados que a pessoa envia no site, como nome e senha.
+  </li>
+  <li>
+    📢 <strong>Informe o usuário sobre o uso dos dados</strong><br>
+    Mostre para o usuário por que você está pedindo essas informações e como vai usá-las.
+  </li>
+  <li>
+    🚫 <strong>Não guarde dados importantes no navegador</strong><br>
+    É perigoso deixar coisas como CPF ou senha salvas ali, pois outra pessoa pode acessar.
+  </li>
+  <li>
+    🔐 <strong>Proteja as senhas no sistema</strong><br>
+    Mesmo que alguém invada, a senha estará embaralhada e não poderá ser usada.
+  </li>
+  <li>
+    👁️ <strong>Não mostre dados pessoais na tela ou no link</strong><br>
+    Evite mostrar coisas como o CPF ou e-mail na tela ou no endereço do site.
+  </li>
+  <li>
+    ✅ <strong>Verifique os dados antes de usar</strong><br>
+    Isso evita que alguém envie códigos maliciosos que possam prejudicar o site.
+  </li>
+  <li>
+    📄 <strong>Deixe a política de privacidade visível</strong><br>
+    Assim o usuário pode ler como seus dados vão ser protegidos.
+  </li>
+</ul>
+  </div>
+
+  <div id="avisoPrivacidade">
+    <p>🔐 Este site coleta dados pessoais. Ao continuar, você concorda com nossa politica de privacidade
